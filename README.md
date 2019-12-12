@@ -1,4 +1,4 @@
-# ![](public/assets/img/rpgquizz.png) RPG Quizz 
+# ![](public/assets/img/logo.png) RPG Quizz 
 
 ## Présentation
 Projet de groupe sur Symfony.

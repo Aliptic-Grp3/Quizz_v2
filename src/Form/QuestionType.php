@@ -2,25 +2,25 @@
 
 namespace App\Form;
 
-use App\Entity\Themes;
+use App\Entity\Question;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class ThemesType extends AbstractType
+class QuestionType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('Name')
-
+            ->add('Sujet')
+            ->add('Theme')
         ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Themes::class,
+            'data_class' => Question::class,
         ]);
     }
 }

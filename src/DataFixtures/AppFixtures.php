@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\Answer;
 use App\Entity\Question;
 use App\Entity\Themes;
 use Doctrine\Bundle\FixturesBundle\Fixture;
@@ -16,9 +17,21 @@ class AppFixtures extends Fixture
         $manager->persist($theme);
 
         $question0 = new Question();
-        $question0->setSujet("Que veux dire PHP ?");
+        $question0->setSujet("Que veut dire PHP ?");
         $question0->setTheme($theme);
         $manager->persist($question0);
+
+        $answer0 = new Answer();
+        $answer0->setProposition("PHP Hypertext Preprocessor");
+        $answer0->setScore(10);
+        $answer0->setQuestion($question0);
+        $manager->persist($answer0);
+
+        $answer1 = new Answer();
+        $answer1->setProposition("Partially Hosted Program");
+        $answer1->setScore(0);
+        $answer1->setQuestion($question0);
+        $manager->persist($answer1);
 
         $manager->flush();
     }

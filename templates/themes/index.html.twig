@@ -20,13 +20,11 @@
                 <td>{{ theme.id }}</td>
                 <td>{{ theme.Name }}</td>
                 <td>
-
                     <ul>
                         {% for question in theme.questions %}
                             <li>{{ question.Sujet }}</li>
                         {% endfor %}
                     </ul>
-
                 </td>
                 <td>
                     <a href="{{ path('themes_show', {'id': theme.id}) }}">show</a>

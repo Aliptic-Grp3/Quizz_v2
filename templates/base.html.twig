@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8">
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}{% endblock %}
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">{#
-    <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.css') }}">
-#}
-    {#<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/css-rpg-quizz.css') }}">#}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body style="padding-top:90px;" class="bg-light">
 
@@ -16,10 +15,10 @@
 
 <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
     <div class="">
-        {#<a href="{{ path('accueil') }}" class="navbar-brand">
+        <a href="#" class="navbar-brand">
             <img src="{{ asset('assets/img/logo.png') }}" alt="logo jeu" width="60">
             RPG Quizz
-        </a>#}
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDrop" aria-controls="navbarDrop" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
             </span>

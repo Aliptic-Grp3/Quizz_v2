@@ -1,0 +1,51 @@
+/* ---------------------------- MENU ------------------------------------ */
+#premier_partie_menu {
+    width: 90%;
+}
+
+#deuxieme_partie_menu {
+    width: 10%;
+}
+
+.image_menu {
+    width: 60px;
+    height: 40px;
+}
+
+.entete-page {
+    text-align: center;
+}
+
+/*-------------------------- CONNEXION ----------------------------- */
+.btn-connexion{
+    width:100%;
+    text-align:center;
+}
+
+.boutton {
+    margin:auto;
+}
+
+/* ---------------------- ACCEUIL -------------------------------- */
+.centrer{
+    text-align: center;
+}
+
+.taille_image_acceuil{
+    width: 250px;
+    height: 250px;
+}
+
+.boutton_jeu{
+    text-align: center;
+    margin: auto;
+}
+
+.margin_1{
+    margin: 1%
+}
+
+.float-right {
+    float: right;
+}
+

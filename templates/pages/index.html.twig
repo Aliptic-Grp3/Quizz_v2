@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ controller_name }} {% endblock %}
+{% block title %}{{ pages.titre }} {% endblock %}
 
 {% block body %}
 <style>
@@ -9,10 +9,11 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
     {% if pages.published == 1 %}
         <h1>{{ pages.titre }}</h1>
         <p>{{ pages.contenu}}</p>
+    {% else %}
+      <h1>{{ controller_name }} ✅</h1>
     {% endif %}
 </div>
 {% endblock %}

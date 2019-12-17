@@ -4,8 +4,16 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
-    </head>
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/css-rpg-quizz.css') }}">
+	</head>
     <body>
+    <a href="{{ path('acceuil') }}" class="btn btn-success">Home</a>
+    <a href="{{ path('pages') }}" class="btn btn-outline-info" name="Apropos">A propos</a>
+    <a href="{{ path('pages') }}" class="btn btn-outline-info">Règles</a>
+    <a href="{{ path('pages') }}" class="btn btn-outline-info">CGU</a>
+    <a href="{{ path('pages') }}" class="btn btn-outline-info">Mentions Légales</a>
+    <br>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
